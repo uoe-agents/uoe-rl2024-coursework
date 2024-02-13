@@ -45,17 +45,6 @@ EX3_DQN_MOUNTAINCAR_CONSTANTS = EX3_MOUNTAINCAR_CONSTANTS.copy()
 EX3_DQN_MOUNTAINCAR_CONSTANTS["max_timesteps"] = 700000
 EX3_DQN_MOUNTAINCAR_CONSTANTS["algo"] = "DQN"
 
-EX4_PENDULUM_CONSTANTS = {
-    "env": "Pendulum-v1",
-    "target_return": -300.0,
-    "episode_length": 200,
-    "max_timesteps": 400000,
-    "max_time": 120 * 60,
-    "gamma": 0.99,
-    "save_filename": "pendulum_latest.pt",
-    "algo": "DDPG",
-}
-
 EX4_RACETRACK_CONSTANTS = {
     "env": "racetrack-v0",
     "target_return": 500.0,
