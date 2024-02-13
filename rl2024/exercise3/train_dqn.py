@@ -60,7 +60,7 @@ elif MOUNTAINCAR_CONFIG['epsilon_decay_strategy'] == "exponential":
 else:
     MOUNTAINCAR_HPARAMS = None
 
-SWEEP_RESULTS_FILE_CARTPOLE = f"DQN-MountainCar-sweep-decay-{MOUNTAINCAR_CONFIG['epsilon_decay_strategy']}-results.pkl"
+SWEEP_RESULTS_FILE_MOUNTAINCAR = f"DQN-MountainCar-sweep-decay-{MOUNTAINCAR_CONFIG['epsilon_decay_strategy']}-results.pkl"
 
 CARTPOLE_CONFIG = {
     "eval_freq": 2000,
@@ -226,7 +226,7 @@ if __name__ == "__main__":
     if ENV == "MOUNTAINCAR":
         CONFIG = MOUNTAINCAR_CONFIG
         HPARAMS_SWEEP = MOUNTAINCAR_HPARAMS
-        SWEEP_RESULTS_FILE = SWEEP_RESULTS_FILE_CARTPOLE
+        SWEEP_RESULTS_FILE = SWEEP_RESULTS_FILE_MOUNTAINCAR
     elif ENV == "CARTPOLE":
         CONFIG = CARTPOLE_CONFIG
         HPARAMS_SWEEP = None
